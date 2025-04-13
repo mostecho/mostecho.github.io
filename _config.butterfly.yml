@@ -684,7 +684,7 @@ baidu_analytics:
 google_analytics:
 
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4bc80ad29414a94b46f7793680d3d8f"}'></script><!-- End Cloudflare Web Analytics -->
+cloudflare_analytics: f4bc80ad29414a94b46f7793680d3d8f
 
 # https://clarity.microsoft.com/
 microsoft_clarity:
