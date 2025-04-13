@@ -876,7 +876,7 @@ canvas_nest:
 fireworks:
   enable: true
   zIndex: 9999
-  mobile: false
+  mobile: true
 
 # Mouse click effects: Heart symbol
 click_heart:
@@ -987,7 +987,7 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: true
+  enable: false
   position: bottom-center
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
