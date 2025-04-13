@@ -12,7 +12,7 @@
 nav:
   # Navigation bar logo image
   logo: 
-  display_title: false
+  display_title: true
   # Whether to fix navigation bar
   fixed: false
 
@@ -27,8 +27,6 @@ menu:
 电影: /movies/ || fas fa-video
 友链: /link/ || fas fa-link
 关于: /about/ || fas fa-heart
- 
-
 
 # --------------------------------------
 # Code Blocks Settings
@@ -40,7 +38,7 @@ code_blocks:
   macStyle: false
   # Code block height limit (unit: px)
   height_limit: false
-  word_wrap: true
+  word_wrap: false
 
   # Toolbar
   copy: true
@@ -53,8 +51,8 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-   fab fa-github: https://github.com/mostecho || Github || '#24292e'
-   fas fa-envelope: mailto:1305057393@qq.com || Email || '#4a7dbe'
+  #fab fa-github: https://github.com/mostecho || Github || '#24292e'
+   
 
 # --------------------------------------
 # Image Settings
@@ -73,21 +71,21 @@ disable_top_img: false
 default_top_img: https://bu.dusays.com/2024/11/15/67370d8563fe4.jpg
 
 # The banner image of index page
-index_img:
+index_img: https://bu.dusays.com/2024/11/15/67370d8563fe4.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: https://bu.dusays.com/2025/04/11/67f9202c74ecc.jpg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: 
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: https://bu.dusays.com/2025/04/11/67f9202c74ecc.jpg
 
 # Note: category page, not categories page
-category_img:
+category_img: https://bu.dusays.com/2025/04/11/67f9202c74ecc.jpg
 
 # The banner image of category page, you can set the banner image for each category
 # Format:
@@ -109,6 +107,7 @@ cover:
   # When cover is not set, the default cover is displayed
   default_cover:
     # - xxx.jpg
+    - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png
 
 # Replace Broken Images
 error_img:
@@ -123,13 +122,13 @@ error_404:
 
 post_meta:
   # Home Page
-  page:
+  page: 
     # Choose: created / updated / both
     date_type: created
     # Choose: date / relative
     date_format: date
     categories: true
-    tags: false
+    tags: true
     label: true
   post:
     # Choose: left / center
@@ -155,12 +154,12 @@ index_top_img_height:
 
 # The subtitle on homepage
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option:
+  typed_option: 
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -168,9 +167,11 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: false
+  source: 1
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: 
+    - 因为热爱，所以幻想
+    - 我爱你，即使连死亡也无法阻挡
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -208,7 +209,7 @@ toc:
 post_copyright:
   enable: true
   decode: false
-  author_href:
+  author_href: 
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
@@ -227,7 +228,7 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: true
+  enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
   url: 
@@ -248,7 +249,7 @@ post_pagination: 1
 
 # Displays outdated notice for a post
 noticeOutdate:
-  enable: false
+  enable: true
   # Style: simple / flat
   style: flat
   # When will it be shown
@@ -264,7 +265,9 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text:
+  custom_text: 
+    -  <a href="https://vercel.com/monstechos-projects"><img src="https://img.shields.io/badge/Theme-Vercel-pink?logo=Vercel&style=plastic"></a>
+
   # Copyright of theme and framework
   copyright: true
 
@@ -279,7 +282,7 @@ aside:
   button: true
   mobile: true
   # Position: left / right
-  position: right
+  position: left
   display:
     archive: true
     tag: true
@@ -294,16 +297,16 @@ aside:
       link: https://github.com/mostecho
   card_announcement:
     enable: true
-    content: 这是我的个人博客
+    content: 本图床不支持使用VPN☔
   card_recent_post:
     enable: true
     # If set 0 will show all
     limit: 5
     # Sort: date / updated
     sort: date
-    sort_order:
+    sort_order: 2
   card_newest_comments:
-    enable: false
+    enable: true
     sort_order: 10
     limit: 6
     # Unit: mins, save data to localStorage
@@ -320,7 +323,7 @@ aside:
     enable: true
     # If set 0 will show all
     limit: 40
-    color: false
+    color: true
     # Order of tags, random/name/length
     orderby: random
     # Sort of order. 1, asc for ascending; -1, desc for descending
@@ -349,11 +352,15 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
-    sort_order:
+    sort_order: 
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
     runtime_date:
+
+    newest_comments:
+      enable: true
+      sort_order: 3 
 
 # --------------------------------------
 # Bottom right button
@@ -394,7 +401,7 @@ darkmode:
   end:
 
 # Show scroll percent in scroll-to-top button
-rightside_scroll_percent: false
+rightside_scroll_percent: true
 
 # Don't modify the following settings unless you know how they work
 # Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
@@ -412,7 +419,7 @@ rightside_item_order:
 
 anchor:
   # When you scroll, the URL will update according to header id.
-  auto_update: true
+  auto_update: false
   # Click the headline to scroll and update the anchor
   click_to_scroll: false
 
@@ -526,16 +533,16 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use:
+  use: twikoo
   # Display the comment name next to the button
   text: true
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
   # Display comment count in post's top_img
-  count: true
+  count: false
   # Display comment count in Home Page
-  card_post_count: false
+  card_post_count: true
 
 # Disqus
 # https://disqus.com/
@@ -684,7 +691,7 @@ baidu_analytics:
 google_analytics:
 
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics:
+cloudflare_analytics: f4bc80ad29414a94b46f7793680d3d8f
 
 # https://clarity.microsoft.com/
 microsoft_clarity:
@@ -797,7 +804,7 @@ display_mode: light
 beautify:
   enable: false
   # Specify the field to beautify (site or post)
-  field: post
+  field: site
   # Specify the icon to be used as a prefix for the title, such as '\f0c1'
   title_prefix_icon:
   # Specify the color of the title prefix icon, such as '#F47466'
@@ -806,15 +813,15 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work
 font:
-  global_font_size:
+  global_font_size: 
   code_font_size:
   font_family:
   code_font_family:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
-  font_link:
-  font_family:
+  font_link: 
+  font_family: 
 
 # The setting of divider icon
 hr_icon:
@@ -828,7 +835,7 @@ hr_icon:
 activate_power_mode:
   enable: true
   colorful: true
-  shake: true
+  shake: false
   mobile: true
 
 # Background effects
@@ -895,7 +902,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: medium_zoom
 
 # --------------------------------------
 # Tag Plugins settings
@@ -919,7 +926,7 @@ abcjs:
 # Mermaid
 # https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: true
+  enable: false
   # Write Mermaid diagrams using code blocks
   code_write: false
   # built-in themes: default / forest / dark / neutral
@@ -980,7 +987,7 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
@@ -988,7 +995,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
@@ -1034,12 +1041,8 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-      - |
-       <!-- Cloudflare Web Analytics -->
-       <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f4bc80ad29414a94b46f7793680d3d8f"}'></script>
-       <!-- End Cloudflare Web Analytics -->
+    - <link rel="stylesheet" href="/css/font.css">
 
-  
   bottom:
 
 # CDN Settings
