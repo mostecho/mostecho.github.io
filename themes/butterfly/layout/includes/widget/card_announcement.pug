@@ -4,20 +4,9 @@ if theme.aside.card_announcement.enable
       i.fas.fa-bullhorn.fa-shake
       span= _p('aside.card_announcement')
     .announcement_content!= theme.aside.card_announcement.content
-      .xpand(style='height:200px;') 
-        canvas.illo(width='800' height='800' style='max-width: 200px; max-height: 200px; touch-action: none; width: 640px; height: 640px;')
-script(src='https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople1.js')
-script(src='https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/zdog.dist.js')
-script#rendered-js(src='https://fastly.jsdelivr.net/gh/xiaopengand/blogCdn@latest/xzxr/twopeople.js')
-style.
-  .card-widget.card-announcement {
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  }
-  canvas {
-  display: block;
-  margin: 0 auto;
-  cursor: move;
-  }
+      .twopeople(style="margin: 0;align-items: center;justify-content: center;text-align: center;")
+    .container(style="height: 180px; margin: 0; align-items: center; justify-content: center; text-align: center;")
+      canvas.illo(width="600" height="600" style="display: block;margin: 0 auto;cursor: move;max-width: 200px; max-height: 200px; touch-action: none; width: 480px; height: 480px;")
+    <script src="https://npm.elemecdn.com/justlovesmile-static/js/twopeople1.js"></script>
+    <script src="https://npm.elemecdn.com/justlovesmile-static/js/zdog.dist.js"></script>
+    <script id="rendered-js" src="https://npm.elemecdn.com/justlovesmile-static/js/twopeople.js"></script>
