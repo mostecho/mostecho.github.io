@@ -107,6 +107,7 @@ deploy:
 
 # 本地搜索：https://github.com/wzpan/hexo-generator-search
 search:
-  path: search.xml
+  path: search.json
   field: all
   content: true
+  format: striptags

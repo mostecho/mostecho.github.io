@@ -18,12 +18,13 @@ nav:
 
 menu:
   首页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  音乐: /music/ || fas fa-music
-  照片: /Gallery/ || fas fa-images
-  友链: /link/ || fas fa-link
+  导航||fas fa-compass||hide:
+    时间轴: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+    音乐: /music/ || fas fa-music
+    照片: /Gallery/ || fas fa-images
+  朋友们: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
 # --------------------------------------
@@ -265,7 +266,7 @@ footer:
     since: 2025
   custom_text: 
     -  <a href="https://vercel.com/monstechos-projects"><img src="https://img.shields.io/badge/Theme-Vercel-pink?logo=Vercel&style=plastic"></a>
-
+    -  <img src="https://img.shields.io/badge/DataBase-MongoDB-orange?logo=MongoDB&amp;style=plastic">
   # Copyright of theme and framework
   copyright: true
 
@@ -477,8 +478,8 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
-  placeholder:
+  use: local_search
+  placeholder: 
 
   # Algolia Search
   algolia_search:
