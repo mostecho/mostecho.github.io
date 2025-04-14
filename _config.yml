@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: monstecho的星空
+title: monstecho
 subtitle: 天马行空的幻想
-description: 我爱你，即使连死亡也无法阻挡
-keywords: 二次元 代码 
+description: <b>我爱你，即使连死亡也无法阻挡</b>
+keywords: 二次元,编程,游戏,博客,monstecho
 author: monstecho
 language: zh-CN
 timezone: Asia/Shanghai
@@ -104,3 +104,9 @@ deploy:
   type: git
   repo: git@github.com:mostecho/mostecho.github.io.git
   branch: main
+
+# 本地搜索：https://github.com/wzpan/hexo-generator-search
+search:
+  path: search.xml
+  field: all
+  content: true

@@ -5,10 +5,11 @@
 #     icon:
 #     html:
 
-# bottom:
-#   - class_name:
-#     id_name:
-#     name:
-#     icon:
-#     order:
-#     html:
+bottom:
+  - class_name: pixiv
+    id_name: 
+    name: Pixiv日榜50
+    icon: fa fa-image
+    order:
+    html: <iframe src="https://pixiv.mokeyjay.com" style="width:240px; height:380px; border:0"></iframe>
+

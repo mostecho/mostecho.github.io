@@ -132,7 +132,7 @@ post_meta:
     label: true
   post:
     # Choose: left / center
-    position: left
+    position: center
     # Choose: created / updated / both
     date_type: both
     # Choose: date / relative
@@ -215,8 +215,8 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
-  text: 测试
+  enable: false
+  text: 
   QR_code:
     # - img: /img/wechat.jpg
     #   link:
@@ -297,14 +297,14 @@ aside:
       link: https://github.com/mostecho
   card_announcement:
     enable: true
-    content: 本图床不支持使用VPN☔
+    content: <b>本图床不支持使用VPN☔</b>
   card_recent_post:
     enable: true
     # If set 0 will show all
     limit: 5
     # Sort: date / updated
     sort: date
-    sort_order: 2
+    sort_order: 4
   card_newest_comments:
     enable: true
     sort_order: 10
@@ -327,7 +327,7 @@ aside:
     # Order of tags, random/name/length
     orderby: random
     # Sort of order. 1, asc for ascending; -1, desc for descending
-    order: 1
+    order: 3
     sort_order:
   card_archives:
     enable: true
@@ -339,7 +339,7 @@ aside:
     order: -1
     # If set 0 will show all
     limit: 8
-    sort_order:
+    sort_order: 8
   card_post_series:
     enable: true
     # The title shows the series name
@@ -352,15 +352,15 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
-    sort_order: 
+    sort_order: 9
     # Time difference between publish date and now
     # Formal: Month/Day/Year Time or Year/Month/Day Time
     # Leave it empty if you don't enable this feature
     runtime_date:
 
-    newest_comments:
-      enable: true
-      sort_order: 3 
+  newest_comments:
+    enable: true
+    sort_order: 3 
 
 # --------------------------------------
 # Bottom right button
@@ -973,7 +973,7 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
     # - /xxxxxx/
@@ -987,7 +987,7 @@ aplayerInject:
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
+  enable: true
   position: bottom-center
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
