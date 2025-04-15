@@ -265,8 +265,6 @@ footer:
     enable: true
     since: 2025
   custom_text: 
-    -  <a href="https://vercel.com/monstechos-projects"><img src="https://img.shields.io/badge/Theme-Vercel-pink?logo=Vercel&style=plastic"></a>
-    -  <img src="https://img.shields.io/badge/DataBase-MongoDB-orange?logo=MongoDB&amp;style=plastic">
   # Copyright of theme and framework
   copyright: true
 
@@ -1041,8 +1039,61 @@ css_prefix: true
 inject:
   head:
     - <link rel="stylesheet" href="/css/font.css">
+    - <link rel="stylesheet" href="/css/custom.css">
+    - |
+      <style>
+        @media screen and (min-width: 1300px) {
+          #nav {
+            display: flex;
+            justify-content: space-between;
+          }
+
+          /* LOGO 居左 */
+          #blog-info {
+            flex: 0 0 auto;
+          }
+
+          /* 菜单项居中 */
+          #menus {
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+          }
+
+          /* 搜索按钮居右 */
+          #search-button {
+            margin-left: auto;
+            order: 2;
+          }
+
+          /* 移动菜单按钮隐藏 */
+          #toggle-menu {
+            display: none;
+          }
+        }
+
+        /* ----- 移动端适配 ----- */
+        @media screen and (max-width: 1300px) {
+          #menus {
+            flex: none;
+          }
+          #toggle-menu {
+            display: block;
+          }
+        }
+
+        /* ----- 菜单项间距优化 ----- */
+        .menus_item {
+          margin: 0 15px !important;
+        }
+      </style>
 
   bottom:
+    - <script defer src="/js/runtime.js"></script> # 页脚计时器
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
