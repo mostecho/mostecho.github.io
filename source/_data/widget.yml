@@ -11,5 +11,5 @@ bottom:
     name: Pixiv日榜50
     icon: fa fa-image
     order:
-    html: <iframe src="https://pixiv.mokeyjay.com" style="width:240px; height:380px; border:0"></iframe>
+    html: <iframe src="https://pixiv.mokeyjay.com" style="width:240px; height:380px; border:0;"></iframe>
 

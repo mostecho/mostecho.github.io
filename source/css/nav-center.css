@@ -1,0 +1,86 @@
+/* 文章标题容器 */
+#nav-article-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  /* 滚动时隐藏原始LOGO */
+  .nav-scroll-hide #blog-info {
+    opacity: 0 !important;
+    pointer-events: none;
+  }
+
+  /* 显示文章标题 */
+  .nav-scroll-show #nav-article-title {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  @media screen and (min-width: 1300px) {
+    #nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* LOGO 居左 */
+    #blog-info {
+      flex: 0 0 auto;
+    }
+
+    /* 菜单项居中 */
+    #menus {
+      flex: 1 1 auto;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+    }
+
+    /* 搜索按钮居右 */
+    #search-button {
+      margin-left: auto;
+      order: 2;
+    }
+
+    /* 移动菜单按钮隐藏 */
+    #toggle-menu {
+      display: none;
+    }
+  }
+
+  #search-button {
+    margin-left: auto !important;
+    order: 999 !important; /* 确保在最右侧 */
+  }
+
+  /* 移动端适配 */
+  @media screen and (max-width: 1300px) {
+    #search-button {
+      margin-left: 0 !important;
+      order: initial !important;
+    }
+  }
+
+  /* ----- 移动端适配 ----- */
+  @media screen and (max-width: 1300px) {
+    #menus {
+      flex: none;
+    }
+    #toggle-menu {
+      display: block;
+    }
+  }
+
+  /* ----- 菜单项间距优化 ----- */
+  .menus_item {
+    margin: 0 15px !important;
+  }
