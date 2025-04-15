@@ -1094,6 +1094,7 @@ inject:
 
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
+    - <script defer src="/live2d-widget/autoload.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
