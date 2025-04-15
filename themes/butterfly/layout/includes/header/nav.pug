@@ -8,6 +8,7 @@ nav#nav
     if globalPageType === 'post'
       a.nav-page-title(href=url_for('/'))
         span.site-name=(page.title || config.title)
+
   #menus
     //- 将搜索按钮移动到最后
     if theme.menu
@@ -19,6 +20,6 @@ nav#nav
           i.fas.fa-search.fa-fw
           span= ' ' + _p('search.title')
 
-    #toggle-menu
-      span.site-page
+      #toggle-menu
+        span.site-page
         i.fas.fa-bars.fa-fw

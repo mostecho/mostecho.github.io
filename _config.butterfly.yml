@@ -61,7 +61,7 @@ favicon: /img/favicon.png
 
 avatar:
   img: https://bu.dusays.com/2025/04/13/67faa29addd90.png
-  effect: true
+  effect: false
 
 # Disable all banner images
 disable_top_img: false
@@ -105,8 +105,8 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
+    - https://bu.dusays.com/2025/04/11/67f9202c74ecc.jpg
     # - xxx.jpg
-    - https://jsd.012700.xyz/gh/jerryc127/CDN@latest/cover/default_bg.png
 
 # Replace Broken Images
 error_img:
@@ -1042,6 +1042,32 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css">
     - |
       <style>
+
+        /* 文章标题容器 */
+        #nav-article-title {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 0;
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          max-width: 60%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+
+        /* 滚动时隐藏原始LOGO */
+        .nav-scroll-hide #blog-info {
+          opacity: 0 !important;
+          pointer-events: none;
+        }
+
+        /* 显示文章标题 */
+        .nav-scroll-show #nav-article-title {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+
         @media screen and (min-width: 1300px) {
           #nav {
             display: flex;
@@ -1076,6 +1102,19 @@ inject:
           }
         }
 
+        #search-button {
+          margin-left: auto !important;
+          order: 999 !important; /* 确保在最右侧 */
+        }
+
+        /* 移动端适配 */
+        @media screen and (max-width: 1300px) {
+          #search-button {
+            margin-left: 0 !important;
+            order: initial !important;
+          }
+        }
+
         /* ----- 移动端适配 ----- */
         @media screen and (max-width: 1300px) {
           #menus {
@@ -1094,7 +1133,51 @@ inject:
 
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
-    - <script defer src="/live2d-widget/autoload.js"></script>
+    - <script defer src="/themes/butterfly/source/live2d-widget/dist/autoload.js"></script>
+    - <script>
+      // 仅文章页生效
+        if (document.querySelector('.post-content')) {
+          let lastScroll = 0
+          const nav = document.getElementById('nav')
+          const blogInfo = document.getElementById('blog-info')
+          const articleTitle = document.getElementById('nav-article-title')
+
+          // 节流函数优化性能
+          const throttle = (func, wait = 100) => {
+            let timer = null
+            return (...args) => {
+              if (!timer) {
+                timer = setTimeout(() => {
+                  func.apply(this, args)
+                  timer = null
+                }, wait)
+              }
+            }
+          }
+
+          const handleScroll = () => {
+            const currentScroll = window.scrollY
+            
+            // 向下滚动超过 150px 且不是顶部
+            if (currentScroll > 150 && currentScroll > lastScroll) {
+              nav.classList.add('nav-scroll-hide')
+              articleTitle.style.display = 'block'
+              setTimeout(() => nav.classList.add('nav-scroll-show'), 10)
+            } 
+            // 向上滚动或回到顶部
+            else {
+              nav.classList.remove('nav-scroll-show')
+              nav.classList.remove('nav-scroll-hide')
+              articleTitle.style.display = 'none'
+            }
+            
+            lastScroll = currentScroll
+          }
+
+          window.addEventListener('scroll', throttle(handleScroll))
+        }
+      </script>
+
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
