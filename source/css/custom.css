@@ -2,6 +2,12 @@
 #aside-content .card-widget:last-child {
   margin-bottom: 20px; 
 }
+
+.loading-img {
+  background: url(https://bu.dusays.com/2025/04/13/67faa29addd90.png) no-repeat center center;
+  background-size: cover;
+}
+
 /* tzy页脚样式 */
 #ft {
     max-width: 1200px;
