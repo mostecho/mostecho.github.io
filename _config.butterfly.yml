@@ -50,8 +50,9 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-    fab fa-github: https://github.com/mostecho || Github || '#24292e'
-    fab fa-bar-chart: https://codetime.dev/zh-TW/dashboard || CodeTime || '#24292e'
+  fas fa-area-chart: https://codetime.dev/zh-TW/dashboard || CodeTime || '#24292e'
+  fab fa-github: https://github.com/mostecho || Github || '#24292e'
+
   
    
 
