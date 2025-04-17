@@ -7,23 +7,25 @@
       descr: 快速、簡單且強大的網誌框架
 
     - name: 快乐小凳凳`Blog
-      link: https://www.dqywy.top/
+      link: https://blog.homanho.top/
       avatar: https://s1.ax1x.com/2023/06/11/pCVjudK.png
       descr: Sow nothing, reap nothing.
-      siteshot: https://s1.ax1x.com/2023/06/11/pCVjKIO.png
+
+    - name: Homanho blog
+      link: https://homanho.top/
+      avatar: https://bu.dusays.com/2025/04/17/6800b70aaf439.jpg
+      descr: 一个热爱生活的可爱草神
+
+    - name: 
+      link: 
+      avatar: 
+      descr: 
 
 - class_name: 網站
   class_desc: 值得推薦的網站
   link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 視頻網站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中國最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
+
+    - name: 
+      link: 
+      avatar: 
+      descr: 

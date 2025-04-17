@@ -3,6 +3,7 @@
   margin-bottom: 20px; 
 }
 
+/*加载界面头像*/
 .loading-img {
   background: url(https://bu.dusays.com/2025/04/13/67faa29addd90.png) no-repeat center center;
   background-size: cover;

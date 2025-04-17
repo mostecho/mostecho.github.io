@@ -50,14 +50,16 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  #fab fa-github: https://github.com/mostecho || Github || '#24292e'
+    fab fa-github: https://github.com/mostecho || Github || '#24292e'
+    fab fa-bar-chart: https://codetime.dev/zh-TW/dashboard || CodeTime || '#24292e'
+  
    
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: https://bu.dusays.com/2025/04/17/6800b4ec5ec48.png
 
 avatar:
   img: https://bu.dusays.com/2025/04/13/67faa29addd90.png
@@ -1041,6 +1043,7 @@ inject:
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/nav-center.css">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
