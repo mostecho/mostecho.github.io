@@ -1043,7 +1043,6 @@ inject:
     - <link rel="stylesheet" href="/css/font.css">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="/css/nav-center.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
