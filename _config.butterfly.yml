@@ -50,7 +50,7 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  fas fa-area-chart: https://codetime.dev/zh-TW/dashboard || CodeTime || '#24292e'
+  fas fa-area-chart: https://wakatime.com/@monstecho || WakaTime || '#24292e'
   fab fa-github: https://github.com/mostecho || Github || '#24292e'
 
   
@@ -691,7 +691,7 @@ baidu_analytics:
 google_analytics:
 
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: f4bc80ad29414a94b46f7793680d3d8f
+cloudflare_analytics:
 
 # https://clarity.microsoft.com/
 microsoft_clarity:
