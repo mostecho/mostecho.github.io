@@ -36,7 +36,7 @@ if (screen.width >= 768) {
   Promise.all([
     loadExternalResource(live2d_path + "js/live2d.min.js", "js"),
     loadExternalResource(live2d_path + "js/waifu-tips.js", "js"),
-  ]).then(() => {
+  ]).then(async () => {
     try {
       const promise = new Promise((resolve, reject) => {
         reject('error');
