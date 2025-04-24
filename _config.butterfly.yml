@@ -1115,7 +1115,7 @@ inject:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
     - <script src="/js/title.js"></script> #网站标题动态效果
     - <script src="/js/aplayer.js"></script> # 播放器
-    - <script src="https://fastly.jsdelivr.net/gh/mostecho/live2d-widget@latest/autoload.js"></script>
+    - <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
     - <div class="aplayer no-destroy" data-id="13622147313" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script>
       // 仅文章页生效
