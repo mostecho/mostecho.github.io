@@ -30,6 +30,17 @@ if (screen.width >= 768) {
     loadExternalResource(live2d_path + "js/waifu-tips.js", "js"),
   ]).then(() => {
 
+    async function asyncFunction() {
+      try {
+        const promise = new Promise((resolve, reject) => {
+          reject('error');
+        });
+        const result = await promise;
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
     // 配置选项的具体用法见 README.md
     initWidget({
       waifuPath: live2d_path + "waifu-tips.json",
