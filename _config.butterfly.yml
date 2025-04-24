@@ -1109,14 +1109,12 @@ inject:
     - <link rel="stylesheet" href="/css/nav-center.css"> #导航居中
     - <link rel="stylesheet" href="/css/twikoo.css" media="defer" onload="this.media='all'"> #评论框
     - <link rel="stylesheet" href="/css/aplayer.css"> # 播放器样式圆角透明
-    # - <link rel="stylesheet" href="/css/2dlive.css"> # 2dlive的样式
-    - <link rel="stylesheet" href="https://registry.npmmirror.com/weblive2d/latest/files/waifu.css">
+    - <link rel="stylesheet" href="/css/2dlive.css"> # 2dlive的样式
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
     - <script src="/js/title.js"></script> #网站标题动态效果
     - <script src="/js/aplayer.js"></script> # 播放器
-    # - <script src="/js/2dlive.js"></script> # 2dlive
-    - <script async src="https://registry.npmmirror.com/weblive2d/latest/files/js/autoload.js"></script>
+    - <script src="/js/2dlive.js"></script> # 2dlive
     - <div class="aplayer no-destroy" data-id="13622147313" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     - <script>
       // 仅文章页生效
