@@ -16,9 +16,17 @@ function loadExternalResource(url, type) {
       tag.src = url;
     }
     if (tag) {
-      tag.onload = () => resolve(url);
-      tag.onerror = () => reject(url);
+      tag.onload = () => {
+        console.log(`Successfully loaded ${url}`);
+        resolve(url);
+      };
+      tag.onerror = () => {
+        console.error(`Failed to load ${url}`);
+        reject(url);
+      };
       document.head.appendChild(tag);
+    } else {
+      reject(new Error(`Unsupported resource type: ${type}`));
     }
   });
 }
@@ -29,18 +37,14 @@ if (screen.width >= 768) {
     loadExternalResource(live2d_path + "js/live2d.min.js", "js"),
     loadExternalResource(live2d_path + "js/waifu-tips.js", "js"),
   ]).then(() => {
-
-    async function asyncFunction() {
-      try {
-        const promise = new Promise((resolve, reject) => {
-          reject('error');
-        });
-        const result = await promise;
-      } catch (error) {
-        console.log(error);
-      }
+    try {
+      const promise = new Promise((resolve, reject) => {
+        reject('error');
+      });
+      const result = await promise;
+    } catch (error) {
+      console.log(error);
     }
-
     // 配置选项的具体用法见 README.md
     initWidget({
       waifuPath: live2d_path + "waifu-tips.json",
@@ -58,5 +62,8 @@ if (screen.width >= 768) {
         "quit",
       ],
     });
+  }).catch((error) => {
+    console.error('Failed to load resources:', error);
+    // 你可以在这里添加额外的错误处理逻辑
   });
 }
