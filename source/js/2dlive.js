@@ -1,6 +1,6 @@
-// 注意：live2d_path 参数应使用绝对路径
-// const live2d_path = "https://cdn.jsdelivr.net/gh/adingapkgg/live2d-api/";
-const live2d_path = "https://registry.npmmirror.com/weblive2d/latest/files/";
+// live2d_path 参数建议使用绝对路径
+const live2d_path = "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+//const live2d_path = "/live2d-widget/";
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -11,30 +11,15 @@ function loadExternalResource(url, type) {
       tag = document.createElement("link");
       tag.rel = "stylesheet";
       tag.href = url;
-    } else if (type === "js") {
+    }
+    else if (type === "js") {
       tag = document.createElement("script");
       tag.src = url;
     }
-
     if (tag) {
-      // 为标签添加跨域属性，解决可能的跨域问题
-      if (type === "js") {
-        tag.crossOrigin = "anonymous";
-      }
-
-      tag.onload = () => {
-        console.log(`Successfully loaded ${url}`);
-        resolve(url);
-      };
-      tag.onerror = (event) => {
-        // 输出更详细的错误信息
-        console.error(`Failed to load ${url}:`, event);
-        reject(new Error(`Failed to load ${url}: ${event.type}`));
-      };
-
+      tag.onload = () => resolve(url);
+      tag.onerror = () => reject(url);
       document.head.appendChild(tag);
-    } else {
-      reject(new Error(`Unsupported resource type: ${type}`));
     }
   });
 }
@@ -42,40 +27,35 @@ function loadExternalResource(url, type) {
 // 加载 waifu.css live2d.min.js waifu-tips.js
 if (screen.width >= 768) {
   Promise.all([
-    loadExternalResource(live2d_path + "js/live2d.min.js", "js"),
-    loadExternalResource(live2d_path + "js/waifu-tips.js", "js"),
-  ])
-  .then(async () => {
-    try {
-      // 这里的 promise 逻辑可能需要调整，目前直接 reject 可能不符合预期
-      const promise = new Promise((resolve, reject) => {
-        // 暂时注释掉，避免不必要的错误
-        // reject('error'); 
-      });
-      const result = await promise;
-    } catch (error) {
-      console.error('Promise error:', error);
-    }
-
+    loadExternalResource(live2d_path + "live2d.min.js", "js"),
+    loadExternalResource(live2d_path + "waifu-tips.js", "js")
+  ]).then(() => {
     // 配置选项的具体用法见 README.md
     initWidget({
       waifuPath: live2d_path + "waifu-tips.json",
-      // apiPath: "https://live2d.fghrsh.net/api/",
-      cdnPath: live2d_path,
-      tools: [
-        "hitokoto",
-        "asteroids",
-        "switch-model",
-        "switch-texture",
-        "photo",
-        "info",
-        "quit",
-      ],
+      //apiPath: "https://live2d.fghrsh.net/api/",
+      cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+      tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
     });
-  })
-  .catch((error) => {
-    console.error('Failed to load all resources:', error);
-    // 可以在这里添加备用资源加载逻辑
-    // 例如：尝试从其他 CDN 加载资源
   });
 }
+
+console.log(`
+  く__,.ヘヽ.        /  ,ー､ 〉
+           ＼ ', !-─‐-i  /  /´
+           ／｀ｰ'       L/／｀ヽ､
+         /   ／,   /|   ,   ,       ',
+       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
+        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
+          !,/7 '0'     ´0iソ|    |
+          |.从"    _     ,,,, / |./    |
+          ﾚ'| i＞.､,,__  _,.イ /   .i   |
+            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
+              | |/i 〈|/   i  ,.ﾍ |  i  |
+             .|/ /  ｉ：    ﾍ!    ＼  |
+              kヽ>､ﾊ    _,.ﾍ､    /､!
+              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+              ﾚ'ヽL__|___i,___,ンﾚ|ノ
+                  ﾄ-,/  |___./
+                  'ｰ'    !_,.:
+`);
