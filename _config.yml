@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.hexo.monstecho.top/
+url: https://www.blog.monstecho.top/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -111,3 +111,9 @@ search:
   field: all
   content: true
   format: striptags
+
+nofollow:
+  enable: true
+  field: post
+  exclude:
+    - '127.0.0.1'
