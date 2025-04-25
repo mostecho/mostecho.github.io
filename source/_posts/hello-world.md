@@ -4,38 +4,12 @@ sticky: 1
 date: 2025-04-18 18:33:00
 type: 'about'
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+# 欢迎来到我的个人博客！
 
-## Quick Start
+欢迎来到我的个人博客！
+我是一个普通的大学生，喜欢鼓捣一些稀奇的东西。
+在这里，我将分享我的学习心得、生活琐事等。
+希望你能够在这里找到你感兴趣的内容，也欢迎你和我一起交流学习,我们一起进步。
 
-### Create a new post
+![](https://bu.dusays.com/2024/11/15/67370d8563fe4.jpg)
 
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)

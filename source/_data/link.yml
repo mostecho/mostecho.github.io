@@ -1,10 +1,10 @@
-- class_name: 友情鏈接
+- class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
     - name: Hexo
       link: https://hexo.io/zh-tw/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、簡單且強大的網誌框架
+      descr: 快速、简单且强大的博客框架
 
     - name: 快乐小凳凳`Blog
       link: https://blog.homanho.top/
@@ -16,16 +16,26 @@
       avatar: https://bu.dusays.com/2025/04/17/6800b70aaf439.jpg
       descr: 一个热爱生活的可爱草神
 
-    - name: 
-      link: 
-      avatar: 
-      descr: 
-
-- class_name: 網站
-  class_desc: 值得推薦的網站
+- class_name: 网站
+  class_desc: 值得推荐的网站
   link_list:
 
-    - name: 
-      link: 
-      avatar: 
-      descr: 
+    - name: 哔哩哔哩
+      link: https://www.bilibili.com/
+      avatar: https://bu.dusays.com/2025/04/25/680b37f965599.png
+      descr: BilBil
+
+    - name: GitHub
+      link: https://github.com/mostecho
+      avatar: https://bu.dusays.com/2025/04/25/680b3880d3653.png
+      descr: 全球最大的开源网站
+
+    - name: Acwing
+      link: https://www.acwing.com/
+      avatar: https://bu.dusays.com/2025/04/25/680b3923b0f75.jpg
+      descr: 快乐学习生活，尽在AcWing
+
+
+
+
+

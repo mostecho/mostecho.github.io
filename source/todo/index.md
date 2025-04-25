@@ -5,10 +5,13 @@ type: 'todo'
 comments: false
 ---
 
-- [ ] CTF
+# 待办
 - [ ] MCP
 - [ ] 吾爱OD
 - [ ] C++ game
 - [ ] unity game
 - [ ] 蓝桥杯
 - [ ] 算法
+<!-- - [ ] CTF
+- [ ] 逆向 -->
+

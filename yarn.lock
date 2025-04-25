@@ -911,6 +911,11 @@ dunder-proto@^1.0.1:
     es-errors "^1.3.0"
     gopd "^1.2.0"
 
+easy-danmaku-js@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/easy-danmaku-js/-/easy-danmaku-js-1.0.7.tgz"
+  integrity sha512-kwPm/g95Ghm70Ez/MXrQtVvrh3dr1JdfqRqKsmbait1fWrdS38M12+spI6tSCMbqYiCO3xFrU19/RS+1Ts3ivA==
+
 easy-extender@^2.3.4:
   version "2.3.4"
   resolved "https://registry.npmmirror.com/easy-extender/-/easy-extender-2.3.4.tgz"

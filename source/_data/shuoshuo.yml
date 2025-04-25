@@ -1,26 +1,14 @@
-# - author: Butterfly
-#   avatar: https://bu.dusays.com/2025/04/13/67faa29addd90.png
-#   date: 2024-06-21 23:33:26
-#   key: key-1
-#   content: |
-#     This is a sample content for **Author 1**.
-#     ![Sample Image](https://via.placeholder.com/150)
-#   tags:
-#     - tags1
-
-# - author: Butterfly
-#   avatar: https://bu.dusays.com/2025/04/13/67faa29addd90.png
-#   date: 2024-06-20 23:33:26
-#   key: key-2
-#   content: |
-#     This is a sample content for **Author 2**.
-#     ![Sample Image](https://via.placeholder.com/150)
-#   tags:
-#     - tag2
-
 - author: monstecho
   avatar: https://bu.dusays.com/2025/04/13/67faa29addd90.png
-  date: 2025-04-24 23:33:26
-  key: key-3
+  date: 2025-04-25 16:30:50
+  key: key-1
+  content: |
+    网站正式完工了！
+    欢迎大家来玩！
+    
+- author: monstecho
+  avatar: https://bu.dusays.com/2025/04/13/67faa29addd90.png
+  date: 2025-04-22 21:33:26
+  key: key-2
   content: |
     ![1745469441148-8699380547dc53602f5d0b224493c71e.jpg](https://bu.dusays.com/2024/11/15/67370d8563fe4.jpg)

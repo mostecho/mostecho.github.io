@@ -181,3 +181,136 @@
     left: 50%;
     transform: translate(-50%, -48px);
 }
+
+/* Twikoo 评论区样式 */
+.tk-comments-container {
+  margin: 1rem 0;
+}
+
+/* 评论项样式 */
+.tk-comment {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* 评论者信息 */
+.tk-nick {
+  font-weight: 600;
+  color: var(--theme-color);
+  margin-right: 0.5rem;
+}
+
+.tk-time {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* 评论内容 */
+.tk-content {
+  margin: 0.8rem 0;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* 评论操作栏 */
+.tk-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.tk-action {
+  color: #666;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tk-action:hover {
+  color: var(--theme-color);
+}
+
+/* 回复框 */
+.tk-reply {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+/* 输入框 */
+.tk-textarea {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.tk-textarea:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 2px rgba(var(--theme-color-rgb), 0.1);
+}
+
+/* 按钮样式 */
+.tk-btn {
+  background: var(--theme-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tk-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 加载更多按钮 */
+.tk-load-more {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* 空评论提示 */
+.tk-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .tk-comment {
+    padding: 0.8rem;
+  }
+  
+  .tk-actions {
+    flex-wrap: wrap;
+  }
+}
+
+/* 深色模式适配 */
+[data-theme="dark"] .tk-comment {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .tk-textarea {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .tk-reply {
+  background: rgba(0, 0, 0, 0.2);
+}

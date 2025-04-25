@@ -12,6 +12,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "easy-danmaku-js": "^1.0.7",
     "hexo": "^7.0.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-butterfly-clock-anzhiyu-yang": "^1.0.1",

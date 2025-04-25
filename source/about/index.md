@@ -13,3 +13,7 @@ type: 'about'
 <center><font size=5><b> Github 项目代码统计</font></b></center>
 
 <img align="center" src="https://github-readme-stats-dusky-alpha.vercel.app/api/top-langs/?username=mostecho&layout=donut-vertical"/>
+
+{% note pink 'fa-solid fa-link'  flat %}
+若加载不出来可以前往[github主页](https://github.com/mostecho)页面查看，或者点击Follow me下面的链接
+{% endnote %}
