@@ -2,7 +2,8 @@
 title: Hello World
 sticky: 1
 date: 2025-04-18 18:33:00
-type: 'about'
+tags:
+  - 个人介绍
 ---
 # 欢迎来到我的个人博客！
 
