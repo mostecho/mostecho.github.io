@@ -1,14 +1,16 @@
 ---
 title: EasyX图形库游戏开发第一天
+series: EasyX图形库游戏开发
 date: 2025-04-26 18:15:10
 tags:
-  - C++
-  - 游戏
-  - EasyX
+    - C++
+    - 游戏
+    - EasyX
 categories:
-  - C++
-  - 游戏
+    - C++
+    - 游戏
 ---
+
 # EasyX图形库游戏开发第一天
 
 我使用的是EasyX图形库+Clion来进行游戏开发
@@ -29,6 +31,8 @@ categories:
 
 本文以 CLion 2024.3.2 为例讲解配置方法，该版本默认带有编译器 MinGW-w64 13.1.0(posix)。
 
+
+
 ### 2. 配置 EasyX 到 CLion
 
 下载 easyx4mingw_20240601.zip，解压缩。
@@ -38,6 +42,8 @@ categories:
 将 lib64\libeasyx.a 拷贝到 D:\App\CLion\bin\mingw\x86_64-w64-mingw32\lib 文件夹里。
 
 安装完成。
+
+
 
 ### 3. 编写 EasyX 程序
 
@@ -62,7 +68,7 @@ int main()
 
 双击编辑 CMakeLists.txt，链接 EasyX 相关的库文件。在 add_executable(...) 这行后面，增加链接库文件的指令：
 
-```cpp
+```cmake
 target_link_libraries(untitled libeasyx.a)
 ```
 
@@ -74,13 +80,23 @@ target_link_libraries(untitled libeasyx.a)
 
 # 开发过程
 
+
+
 ## 1.创建文件
 
-首先我创建一个cmake的C++可执行文件，我命名为game
+首先我创建一个cmake的C++可执行文件，我命名为game.cpp
 
 同时为了方便管理头文件，我创建了一个game.h头文件来进行管理
 
 然后我导入了三张图片-开始游戏，退出游戏，背景照片。
+
+{% note danger simple %}
+
+图片资源一定要放对位置和生成的程序.exe在同一个文件夹下面，我这边是cmake-build-debug文件夹,如果放错了就会像我一样生成的程序没有背景~~又花了半天时间去弄清楚~~
+
+{% endnote %}
+
+
 
 ## 2.CLion 配置 EasyX
 
@@ -90,12 +106,15 @@ target_link_libraries(untitled libeasyx.a)
 
 ![CMakeLists.txt配置图片](https://bu.dusays.com/2025/04/26/680ca60271bbf.png)
 
+
+
 ## 3.编写代码
 
 ### 编辑game.h头文件
 
-```
+```cpp
 #ifndef GAME_H
+#define GAME_H
 
 #include <graphics.h>
 #include <iostream>
@@ -104,19 +123,20 @@ using namespace std;
 #define WIDHTH 1280
 #define HIGETH 720
 
-IMAGE bk;
-IMAGE start;
-IMAGE quit;
+IMAGE bk;   //背景图片
+IMAGE start;  //开始按钮图片
+IMAGE quit;  //退出按钮图片
 
 void startloadImg();
 
-#define GAME_H
 #endif //GAME_H
 ```
 
-### 编写主程序代码
 
-{% note info simple %}
+
+### 编写主程序
+
+{% note info modern %}
 记得先导入头文件
 {% endnote %}
 
@@ -124,7 +144,9 @@ void startloadImg();
 #include "game.h"  //导入头文件
 ```
 
-### 编写主程序
+
+
+下面是我的代码
 
 ```cpp
 #include "game.h"  //导入头文件
@@ -140,19 +162,21 @@ int main()
 
 void startloadImg()  
 {
-    loadimage(&bk, _T("image/background.png"),WIDHTH,HIGETH);   //背景照片
-    loadimage(&start, _T("image/start.jpg"));
-    loadimage(&quit, _T("image/quit.jpg"));
+    loadimage(&bk, _T("image/background.png"),WIDTH,HEIGTH);  //背景
+    loadimage(&start, _T("image/start.jpg"));  //开始游戏
+    loadimage(&quit, _T("image/quit.jpg"));  //退出游戏
 
     putimage(0,0, &bk);
-    putimage(WIDHTH/2-88, HIGETH/2-50, &start);
-    putimage(WIDHTH/2-88, HIGETH/2+50, &quit);
+    putimage(WIDTH/2-88, HEIGTH/2-50,170,50, &start,0,0);
+    putimage(WIDTH/2-88, HEIGTH/2+50,170,50, &quit,0,0);
 };
 ```
 
+
+
 ### 运行程序
 
-虽然十分简陋但是还是实现了界面显示效果
+虽然十分简陋但是还是实现了主界面显示
 
 最终得到以下界面
 
