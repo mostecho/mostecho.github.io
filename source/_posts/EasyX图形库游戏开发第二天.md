@@ -15,7 +15,7 @@ categories:
 
 ## 今日目标
 
-昨天已经实现了图形主界面，今天要做的是鼠标检测功能，让鼠标在点击图片后能触发开始或者退出
+昨天已经实现了图形主界面，今天要做的是鼠标检测功能和场景切换，让鼠标在点击图片后能触发开始或者退出
 
 
 
@@ -189,6 +189,16 @@ void startupScene(ExMessage *msg)
 我们需要判断鼠标是否在图片上并且点击图片，所以我们我们需要检测左键点击（按理来说应该检测左键是否松开，所以我写的是WM_LBUTTONUP，检测左键松开），我选择的是布尔类型bool，[C 语言的布尔类型(true 与 false) | 菜鸟教程](https://www.runoob.com/w3cnote/c-bool-true-false.html)
 
 这样可以判断鼠标左键的松开是否在图片上，如果是true跳转下一个界面，如果是false就保持当前界面。
+
+```cpp
+bool isInRect(ExMessage *msg, int x, int y, int w, int h)
+{
+    if (msg->x>x&&msg->x<w+x&&msg->y>y&&msg->y<h+y)   //判断鼠标是否在图片上
+        return true;
+    else
+        return false;
+}
+```
 
 
 
