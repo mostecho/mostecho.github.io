@@ -20,4 +20,6 @@ comment: false
 ![](https://bu.dusays.com/2025/04/17/6800b508a8b52.jpg)
 ![](https://bu.dusays.com/2025/04/17/6800b5283a38a.jpg)
 ![](https://bu.dusays.com/2025/04/17/6800b4f61fa15.jpg)
+![](https://bu.dusays.com/2025/04/30/6811017644272.jpg)
+
 {% endgallery %}
