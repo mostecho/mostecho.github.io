@@ -9,7 +9,6 @@ tags:
 categories:
     - C++
     - 游戏
-
 ---
 
 # EasyX图形库游戏开发第三天
