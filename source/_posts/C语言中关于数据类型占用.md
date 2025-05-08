@@ -410,7 +410,7 @@ Size of enum LargeEnum: 4 bytes
 在这个例子中，enum Color 只包含小的正整数值（0、1、2），而 enum LargeEnum 包含一个较大的值（1000000）。尽管如此，它们在大多数系统上都占用 4 字节，因为编译器通常会选择 int 作为默认的底层类型。
 
 
-然而，需要注意的是，C 标准并没有严格规定 enum 的大小，一些编译器可能会根据枚举值的范围选择更小的类型。例如，如果所有枚举值都小于 256，编译器可能会使用 unsigned char 作为底层类型，从而使 enum 只占用 1 字节。
+然而，需要注意的是，C 标准并没有严格规定 enum 的大小，一些编译器可能会根据枚举值的范围选择更小的类型。例如，如果所有枚举值都小于 256，编译器可能会使用 unsigned char 作为底层类型，从而使 enum 只占用 1 字节。**但一般来说在C 语言中，枚举类型是被当做 int 或者 unsigned int 类型来处理的。**
 
 
 关于 enum 的底层整数类型，C 标准规定它必须是某种带符号或无符号的整数类型。在大多数实现中，默认情况下会使用 int 类型。但是，如果枚举值超出了 int 的范围，编译器可能会选择更大的类型，如 long 或 long long。
@@ -449,6 +449,10 @@ typedef uint8_t ColorType;
 #define COLOR_GREEN ((ColorType)1)
 #define COLOR_BLUE  ((ColorType)2)
 ```
+
+[C语言数据类型及typedef下的uint8_t / uint32_t_typedef uint8-CSDN博客](https://blog.csdn.net/m0_64770246/article/details/124209343)
+
+ColorType被显式定义为 `uint8_t`（1字节无符号整数），确保固定内存占用
 
 这种方法可以让你更精确地控制枚举值的大小和类型，但代价是失去了一些 enum 提供的类型安全性和可读性。
 
