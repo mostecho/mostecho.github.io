@@ -27,8 +27,6 @@ comment: false
 ![1000115502.jpg](https://bu.dusays.com/2025/04/30/68110300ce3a0.jpg)
 ![1000110833.jpg](https://bu.dusays.com/2025/04/30/681102f5c8392.jpg)
 ![1000116391.jpg](https://bu.dusays.com/2025/04/30/681102ef677a2.jpg)
-![1000107671.jpg](https://bu.dusays.com/2025/04/30/681102ee06ace.jpg)
-![1000096614.png](https://bu.dusays.com/2025/04/30/68110179ac616.png)
 ![1000095186.jpg](https://bu.dusays.com/2025/04/30/681101c5b1ae1.jpg)
 ![1000095191.jpg](https://bu.dusays.com/2025/04/30/681101ba798c2.jpg)
 ![1000115501.jpg](https://bu.dusays.com/2025/04/30/6811032ab73d1.jpg)

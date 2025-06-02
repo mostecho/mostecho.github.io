@@ -775,8 +775,8 @@ ad:
 site_verification:
   # - name: google-site-verification
   #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+  - name: baidu-site-verification
+    content: codeva-uz2vkpHNdr
 
 # --------------------------------------
 # Beautify / Effect
