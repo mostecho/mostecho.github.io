@@ -108,24 +108,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - https://bu.dusays.com/2025/04/16/67ff3c3d07c7c.jpg
-    - https://bu.dusays.com/2025/04/17/6800b4f5677eb.jpg
-    - https://bu.dusays.com/2025/04/17/6800b4f61fa15.jpg
-    - https://bu.dusays.com/2025/04/17/6800b5283a38a.jpg
-    - https://bu.dusays.com/2025/04/30/681103feabd81.jpg
-    - https://bu.dusays.com/2025/04/30/681103feabd81.jpg
-    - https://bu.dusays.com/2025/04/30/681103f8da997.jpg
-    - https://bu.dusays.com/2025/04/30/681103f447910.jpg
-    - https://bu.dusays.com/2025/04/30/681103f365453.jpg
-    - https://bu.dusays.com/2025/04/30/681103f7c9939.jpg
-    - https://bu.dusays.com/2025/04/30/681103f18814e.jpg
-    - https://bu.dusays.com/2025/04/30/681103f0045cf.jpg
-    - https://bu.dusays.com/2025/04/30/681103ed57892.jpg
-    - https://bu.dusays.com/2025/04/30/681103e8efe9c.jpg
-    - https://bu.dusays.com/2025/04/30/681103eec00f0.jpg
-    - https://bu.dusays.com/2025/04/30/681103e7d9a38.jpg
-    - https://bu.dusays.com/2025/04/30/681103f1d0dfe.jpg
-    - https://bu.dusays.com/2025/04/30/681103f5bfccc.jpg
+
 
 # Replace Broken Images
 error_img:
@@ -1138,14 +1121,12 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css"> # 页脚
     - <link rel="stylesheet" href="/css/nav-center.css"> #导航居中
     - <link rel="stylesheet" href="/css/twikoo.css" media="defer" onload="this.media='all'"> #评论框
-    - <link rel="stylesheet" href="/css/aplayer.css"> # 播放器样式圆角透明
 
   bottom:
     - <script defer src="/js/runtime.js"></script> # 页脚计时器
     - <script src="/js/title.js"></script> #网站标题动态效果
-    - <script src="/js/aplayer.js"></script> # 播放器
     - <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@0/autoload.js"></script>
-    - <div class="aplayer no-destroy" data-id="13622147313" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+ 
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work

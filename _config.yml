@@ -112,8 +112,33 @@ search:
   content: true
   format: striptags
 
+  # 配置网站地图
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template: ./sitemap_template.xml
+  template_txt: ./sitemap_template.txt
+  rel: false
+  tags: true
+  categories: true
+  # 配置百度专属地图
+baidusitemap:
+  path: baidusitemap.xml
+# Extensions
+plugins:
+  hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+# 为网站使用到的所有外链添加rel="noopener external nofollow noreferrer", 可以有效地加强网站SEO和防止权重流失
+# field 是指定那些页面我指定的post 是所有文章全部启用，如果你想启动全站都屏蔽链接的话就是 site，如果你有友联的话慎用。
+#exclude是放行这些域名下的。
 nofollow:
   enable: true
   field: post
   exclude:
-    - '127.0.0.1'
+    - '*.misaka.pics'
+    - 'icp.gov.moe'
