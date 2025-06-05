@@ -1,0 +1,8 @@
+User-agent: Baiduspider
+
+Sitemap: https://blog.monstecho.top/baidusitemap.xml
+
+User-agent: *
+Disallow:
+
+Sitemap: https://blog.monstecho.top/sitemap.xml
