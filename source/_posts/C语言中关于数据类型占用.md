@@ -1,7 +1,6 @@
 ---
 title: C语言中关于数据类型占用
 date: 2025-05-07 23:17:50
-swiper_index: 5
 tags:
     - C++
     - C
