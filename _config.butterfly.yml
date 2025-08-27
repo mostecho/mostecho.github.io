@@ -24,7 +24,7 @@ menu:
     分类: /categories/ || fas fa-folder-open
     留言: /collect/ || fas fa-comment-dots
     照片: /gallery/ || fas fa-images
-    待办: /todo/ || fas fa-list-check
+    # 待办: /todo/ || fas fa-list-check
     # 音乐: /music/ || fas fa-music
   动态: /shuoshuo/ || fas fa-comment  
   朋友们: /link/ || fas fa-link
