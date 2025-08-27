@@ -120,9 +120,6 @@ sitemap:
   rel: false
   tags: true
   categories: true
-  # 配置百度专属地图
-baidusitemap:
-  path: baidusitemap.xml
 # Extensions
 plugins:
   hexo-generator-feed

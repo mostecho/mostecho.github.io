@@ -98,10 +98,11 @@ enum DIR  //枚举类型
 };                                                                                         
 ```
 
-我们还需要定义一个人物坐标，我选择POINT结构体~~其实是懒得自己定义~~，[C语言 POINT结构体 / 点类型_c语言point-CSDN博客](https://blog.csdn.net/qq_45735810/article/details/114905780)
+我们还需要定义一个人物坐标，我选择POINT结构体  ~~有现成的我直接使用~~
 
-Windows API 中的 POINT 结构体
- 定义如下：
+[C语言 POINT结构体 / 点类型_c语言point-CSDN博客](https://blog.csdn.net/qq_45735810/article/details/114905780)
+
+Windows API 中的 POINT 结构体，在windef.h中，定义如下：
 
 ```cpp
 typedef struct tagPOINT {
@@ -216,7 +217,7 @@ int main()
 
 
 
-## git仓库配置
+## git仓库配置（额外教程）
 
 {% note info modern %}
 记得先看一遍教程，看看提示，还有看一下最后我的总结，以及我遇到的问题
@@ -427,7 +428,7 @@ Git 是一款**分布式版本控制系统**，由 Linus Torvalds 为管理 Linu
 
 ## 我的配置经过
 
-我的配置充满坎坷，clion还是太难操作了，而且因为网络问题（后面才知道的），一直上传不了，只能使用clone，我就只好选择了vscode上传，因为vscode的报错更加简洁，经过百度查询，我才明白了是网络的问题，但是为什么还有分支合并的问题（我只有一个分支），我的仓库半个月前就创建了，如今才启用，配置也是好麻烦，下次还是直接新建仓库再clone下来用，这样就少了很多麻烦。
+我的配置过程充满坎坷，clion还是太难操作了，而且因为网络问题（后面才知道的），一直上传不了，我就只好选择了vscode上传，经过百度查询，我才明白了是网络的问题，但是我还遇到了分支合并的问题（我只有一个主分支main），我的仓库半个月前就创建了，现在才启用，配置也是很麻烦，下次还是直接新建仓库再clone下来用，这样就会少很多麻烦。
 
 [ 深入理解与解决Git中的“fatal: refusing to merge unrelated hi ](https://segmentfault.com/a/1190000044807470) **分支合并**
 

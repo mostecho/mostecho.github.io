@@ -92,7 +92,7 @@ target_link_libraries(untitled libeasyx.a)
 
 {% note danger simple %}
 
-图片资源一定要放对位置和生成的程序.exe在同一个文件夹下面，我这边是cmake-build-debug文件夹,如果放错了就会像我一样生成的程序没有背景~~又花了半天时间去弄清楚~~
+图片资源一定要放对位置和生成的程序.exe在同一个文件夹下面，我这边是cmake-build-debug文件夹,如果放错了就会像我一样生成的程序没有背景
 
 {% endnote %}
 
@@ -176,7 +176,7 @@ void startloadImg()
 
 ### 运行程序
 
-虽然十分简陋但是还是实现了主界面显示
+虽然十分简陋，但是还是实现了主界面显示
 
 最终得到以下界面
 
