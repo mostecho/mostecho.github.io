@@ -123,8 +123,11 @@ sitemap:
     - sitemap.xml
     - sitemap.txt
   rel: false
+  priority: 0.5
+  changefreq: daily
   tags: true
   categories: true
+  lastmod: true
 # Extensions
 plugins:
   hexo-generator-feed
