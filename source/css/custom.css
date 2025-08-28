@@ -13,14 +13,6 @@
   border: var(--border-style);
 }
 
-/* 说说卡片透明 */
-#article-container .shuoshuo-item {
-  background: var(--trans-light);
-  backdrop-filter: var(--backdrop-filter);
-  border-radius: 25px;
-  border: var(--border-style);
-}
-
 /* 首页侧栏卡片 */
 #aside-content .card-widget {
   background: var(--trans-light);
@@ -39,12 +31,6 @@ div#archive {
   border-radius: 20px;
 }
 
-/* 说说背景透明 */
-div#page.nc {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: none;
-  border: hidden;
-}
 /* 导航栏 */
 #page-header.nav-fixed #nav {
   background: rgba(255, 255, 255, 0.7);

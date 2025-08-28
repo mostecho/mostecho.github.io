@@ -26,7 +26,7 @@ menu:
     照片: /gallery/ || fas fa-images
     # 待办: /todo/ || fas fa-list-check
     # 音乐: /music/ || fas fa-music
-  动态: /shuoshuo/ || fas fa-comment  
+  动态: /artitalk/ || fas fa-comment  
   朋友们: /link/ || fas fa-link
   关于: /about/ || fas fa-circle-info
 

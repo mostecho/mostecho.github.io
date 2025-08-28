@@ -1276,6 +1276,13 @@ hexo-browsersync@^0.3.0:
     browser-sync "^2.18.13"
     connect-injector "^0.4.4"
 
+hexo-butterfly-artitalk@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/hexo-butterfly-artitalk/-/hexo-butterfly-artitalk-1.0.5.tgz"
+  integrity sha512-YQTKdVdxFx+etRREaXsff1ecSrB1w+ZANsujprcGFs8XaC+jo9+G6ozFszVcKxKNBHxrsvij0TqS/KyUjJnu+w==
+  dependencies:
+    pug "^3.0.3"
+
 hexo-butterfly-clock-anzhiyu-yang@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/hexo-butterfly-clock-anzhiyu-yang/-/hexo-butterfly-clock-anzhiyu-yang-1.0.1.tgz"
@@ -2524,6 +2531,20 @@ pug@^3.0.0:
 pug@^3.0.2:
   version "3.0.3"
   resolved "https://registry.npmmirror.com/pug/-/pug-3.0.3.tgz"
+  integrity sha512-uBi6kmc9f3SZ3PXxqcHiUZLmIXgfgWooKWXcwSGwQd2Zi5Rb0bT14+8CJjJgI8AB+nndLaNgHGrcc6bPIB665g==
+  dependencies:
+    pug-code-gen "^3.0.3"
+    pug-filters "^4.0.0"
+    pug-lexer "^5.0.1"
+    pug-linker "^4.0.0"
+    pug-load "^3.0.0"
+    pug-parser "^6.0.0"
+    pug-runtime "^3.0.1"
+    pug-strip-comments "^2.0.0"
+
+pug@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/pug/-/pug-3.0.3.tgz"
   integrity sha512-uBi6kmc9f3SZ3PXxqcHiUZLmIXgfgWooKWXcwSGwQd2Zi5Rb0bT14+8CJjJgI8AB+nndLaNgHGrcc6bPIB665g==
   dependencies:
     pug-code-gen "^3.0.3"
