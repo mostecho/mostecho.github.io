@@ -2,7 +2,7 @@
 title: 照片
 date: 2025-04-16 13:07:11
 type: 'gallery'
-comment: false
+comments: false
 ---
 
 <div class="gallery-group-main">

@@ -1097,18 +1097,24 @@ wowjs:
   wow_js: https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js
   wow_init_js: https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js
 
-  # Artitalk
+# Artitalk
 # see https://artitalk.js.org/
 artitalk:
   enable: true
   appId: MqrVTHvyLsRymVZIVKgZ6nfn-MdYXbMMI
   appKey: Xb7M2yWcGK5bmsj724PNJjj3
-  path: #【可选】Artitalk 的路径名称（默认为 artitalk，生成的页面为 artitalk/index.html）
-  js: 
+  path: artitalk
+  js: js/artitalk.js
+  front_matter:
+    comments: false
   option: 
     serverURL: 'https://artitalk.monstecho.top' 
-    pageSize: 10 
-    atComment: 0  # 是否可评论
+    pageSize: 10 # 每页显示的评论数
+    atComment: 0 # 是否开启 0 代表关闭，1 代表开启
+    color1: 'linear-gradient(45deg,rgba(109,208,242,0.75) 15%,rgba(245,154,190,0.75) 85%)'  # 说说背景色1（默认是橙色）
+    color2: 'linear-gradient(45deg,rgba(109,208,242,0.75) 15%,rgba(245,154,190,0.75) 85%)'  # 说说背景色2（默认是绿色）
+    color3: '#4c4948'  # 说说文字内容颜色（默认是白色）
+  
 
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
