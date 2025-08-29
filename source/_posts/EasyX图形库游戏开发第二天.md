@@ -115,8 +115,7 @@ enum MenuOp
 };
 ```
 
-
-{% note red 'fas fa-fan' modern%}
+{% note red 'fas fa-bullhorn' simple %}
 
 
 请注意一定要弄清楚图片在窗口中的逻辑坐标，不然就会像我一样点图片没反应，差点以为写错了if的判断语句
