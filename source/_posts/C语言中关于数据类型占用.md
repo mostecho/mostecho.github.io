@@ -1,13 +1,12 @@
 ---
 title: C语言中关于数据类型占用
-tags:
-  - C++
-  - C
-categories:
-  - C++
-  - C
-abbrlink: 92e6e4bf
 date: 2025-05-07 23:17:50
+tags:
+    - C++
+    - C
+categories:
+    - C++
+    - C
 ---
 
 # bit、byte、KB、B、字节、位、字符之间关系详解
@@ -112,7 +111,7 @@ C语言会自动在在双引号" "括起来的内容的末尾补上"\0"代表结
 
 [ASCII码对照表，ASCII码一览表（非常详细） - C语言中文网](https://c.biancheng.net/c/ascii/)
 
-{% note red 'fas fa-fan' modern%}
+{% note red 'fas fa-bullhorn' simple %}
 
 注意，下面的代码是错误的
 
