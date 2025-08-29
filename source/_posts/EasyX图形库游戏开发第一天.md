@@ -8,7 +8,7 @@ tags:
 categories:
   - C++
   - 游戏
-abbrlink: 9472
+abbrlink: 6442bc33
 date: 2025-04-26 18:15:10
 ---
 
@@ -60,10 +60,10 @@ date: 2025-04-26 18:15:10
 
 int main()
 {
-	initgraph(640, 480);
-	circle(320, 240, 100);
-	_getch();
-	return 0;
+    initgraph(640, 480);
+    circle(320, 240, 100);
+    _getch();
+    return 0;
 }
 ```
 
@@ -91,12 +91,7 @@ target_link_libraries(untitled libeasyx.a)
 
 然后我导入了三张图片-开始游戏，退出游戏，背景照片。
 
-{% note danger simple %}
-
-图片资源一定要放对位置和生成的程序.exe在同一个文件夹下面，我这边是cmake-build-debug文件夹,如果放错了就会像我一样生成的程序没有背景
-
-{% endnote %}
-
+{% note red 'fas fa-bullhorn' simple %}图片资源一定要放对位置和生成的程序.exe在同一个文件夹下面，我这边是cmake-build-debug文件夹,如果放错了就会像我一样生成的程序没有背景{% endnote %}
 
 
 ## 2.CLion 配置 EasyX
@@ -137,9 +132,7 @@ void startloadImg();
 
 ### 编写主程序
 
-{% note info modern %}
-记得先导入头文件
-{% endnote %}
+{% note blue 'fas fa-bullhorn' simple %}记得先导入头文件{% endnote %}
 
 ```cpp
 #include "game.h"  //导入头文件

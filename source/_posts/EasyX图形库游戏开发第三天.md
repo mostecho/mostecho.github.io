@@ -8,7 +8,7 @@ tags:
 categories:
   - C++
   - 游戏
-abbrlink: 47363
+abbrlink: 194af3b9
 date: 2025-04-28 17:41:26
 ---
 
@@ -55,9 +55,11 @@ loadimage(&dimian, _T("image/dimian.jpg"));
 
 我定义了一个putgamebk函数用来生成游戏场景，因为图片是三块砖，所以我选择了循环for绘制，将地面铺了出来
 
-{% note info modern %}
-记得裁剪好砖块大小，上面的已经裁剪好了
-{% endnote %}
+
+
+{% note blue 'fas fa-bullhorn' simple %}记得裁剪好砖块大小，上面的已经裁剪好了{% endnote %}
+
+
 
 ```cpp
 void putgamebk()
@@ -181,9 +183,11 @@ Sleep(50)的作用[【C语言】Sleep()函数----详解_sleep函数-CSDN博客](
 
 **如果不加最上面两句会使得小球之前移动的位置还留着一个小球**
 
-{% note info simple %}
-主程序中的if语句后续会更改，目前只是适用于当前的开发
-{% endnote %}
+
+
+{% note blue 'fas fa-bullhorn' simple %}主程序中的if语句后续会更改，目前只是适用于当前的开发{% endnote %}
+
+
 
 ```cpp
 int main()
@@ -220,7 +224,7 @@ int main()
 
 ## git仓库配置（额外教程）
 
-{% note info modern %}
+{% note blue 'fas fa-bullhorn' simple %}
 记得先看一遍教程，看看提示，还有看一下最后我的总结，以及我遇到的问题
 {% endnote %}
 

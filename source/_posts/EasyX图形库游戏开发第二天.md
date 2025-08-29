@@ -7,7 +7,7 @@ tags:
   - EasyX
 categories:
   - C++
-abbrlink: 46458
+abbrlink: 545450eb
 date: 2025-04-27 23:08:33
 ---
 
@@ -116,8 +116,8 @@ enum MenuOp
 ```
 
 
+{% note red 'fas fa-fan' modern%}
 
-{% note danger simple %}
 
 请注意一定要弄清楚图片在窗口中的逻辑坐标，不然就会像我一样点图片没反应，差点以为写错了if的判断语句
 
@@ -141,15 +141,11 @@ initgraph(WIDTH,HEIGTH);  //创建窗口 1280x720
 loadimage(&gamebk, _T("image/gamebk.jpg"),1280,720); //后面的是用于图片拉伸覆盖整个窗口
 ```
 
-
-
 下面这块代码是场景切换代码，里面的isInRect(msg,x,y,w,h)这个是用于下一步判断是否鼠标点击图片
 
-{% note info simple %}
 
-学会使用终端，可以在if判断语句内加一句文字输出，看看是否条件是否执行
 
-{% endnote %}
+{% note blue 'fas fa-bullhorn' simple %}学会使用终端，可以在if判断语句内加一句文字输出，看看是否条件是否执行{% endnote %}
 
 
 

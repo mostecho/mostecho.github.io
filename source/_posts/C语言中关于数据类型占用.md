@@ -6,7 +6,7 @@ tags:
 categories:
   - C++
   - C
-abbrlink: 28322
+abbrlink: 92e6e4bf
 date: 2025-05-07 23:17:50
 ---
 
@@ -112,7 +112,7 @@ C语言会自动在在双引号" "括起来的内容的末尾补上"\0"代表结
 
 [ASCII码对照表，ASCII码一览表（非常详细） - C语言中文网](https://c.biancheng.net/c/ascii/)
 
-{% note info danger %}
+{% note red 'fas fa-fan' modern%}
 
 注意，下面的代码是错误的
 
@@ -362,7 +362,7 @@ strlen(s) = 13
 
 ### 枚举类型
 
-{% note info simple %}
+{% note blue 'fas fa-bullhorn' simple %}
 
 枚举类型的占用
 
