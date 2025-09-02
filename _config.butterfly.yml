@@ -644,7 +644,7 @@ twikoo:
   envId: https://twikooblog.netlify.app/.netlify/functions/twikoo
   region:
   # Use Twikoo visitor count as the page view count
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
